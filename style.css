@@ -1,0 +1,482 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #998B78; /* Cor de fundo suave */
+  color: #f4f4f4; /* Cor de texto clara */
+}
+
+header {
+  background-color: #595146; /* Cor escura de marrom para cabeçalho */
+  color: white;
+  padding: 20px 0;
+  text-align: center;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+}
+
+header .logo {
+  font-size: 2rem;
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+
+nav ul {
+  list-style: none;
+  padding-top: 10px;
+}
+
+nav ul li {
+  display: inline;
+  margin-left: 30px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: white;
+  font-size: 1.1rem;
+  transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+  color: #E6D0B4; /* Cor suave de destaque no hover */
+}
+
+.hero {
+  height: 100vh;
+  background: url('imagem-de-fundo.jpg') center center/cover no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: white;
+  padding: 0 20px;
+}
+
+.hero-content {
+  max-width: 90%;
+}
+
+.hero h1 {
+  font-size: 3rem;
+  margin-bottom: 20px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+
+.dynamic-text {
+  font-size: 1.5rem;
+  color: black; /* Cor suave para o texto */
+  margin-top: 20px;
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+
+.hero p {
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+}
+
+.btn-cta {
+  background-color: #E6D0B4; /* Cor bege suave para botões */
+  padding: 15px 30px;
+  color: #595146; /* Cor de texto escura */
+  text-decoration: none;
+  border-radius: 50px;
+  font-size: 1.2rem;
+  transition: background-color 0.3s ease;
+}
+
+.btn-cta:hover {
+  background-color: #998B78; /* Cor de fundo de botão no hover */
+  color: white;
+}
+
+.sobre {
+  padding: 60px 20px;
+  background-color: #595146; /* Cor marrom escuro para sobre */
+  text-align: center;
+}
+
+.sobre .container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.foto-perfil-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.foto-perfil {
+  width: 180px;
+  height: 180px;
+  border-radius: 50%;
+  object-fit: cover;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+}
+
+.texto-sobre h2 {
+  font-size: 2rem;
+  color: #E6D0B4; /* Título de sobre em bege suave */
+  margin-bottom: 20px;
+}
+
+.servicos {
+  padding: 60px 20px;
+  background-color: #998B78; /* Cor marrom acinzentado suave para os serviços */
+  text-align: center;
+}
+
+.servicos-container {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 40px;
+  gap: 20px;
+}
+
+.servico {
+  background-color: #E6D0B4; /* Fundo claro de bege para os cards */
+  padding: 30px;
+  width: 30%;
+  border-radius: 10px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.servico:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.15);
+}
+
+.servico h3 {
+  color: #595146; /* Cor escura de texto para os títulos dos serviços */
+  margin-bottom: 10px;
+}
+
+.servico p {
+  font-size: 1.1rem;
+  color: #595146; /* Cor escura de texto para os parágrafos */
+}
+
+
+footer {
+  background-color: #595146; /* Cor escura para o rodapé */
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+
+footer {
+  background-color: #595146; /* Cor escura para o rodapé */
+  color: white;
+  padding: 40px 20px;
+  text-align: center;
+}
+
+footer .social-media {
+  margin-bottom: 30px;
+}
+
+footer .social-icon {
+  margin: 0 15px;
+  display: inline-block;
+}
+
+footer .social-icon img {
+  width: 30px;
+  height: 30px;
+  transition: transform 0.3s ease;
+}
+
+footer .social-icon:hover img {
+  transform: scale(1.1);
+}
+
+footer .affiliation {
+  margin-bottom: 20px;
+}
+
+footer .btn-affiliate {
+  background-color: #E6D0B4; /* Cor do botão de afiliado */
+  color: #595146; /* Texto escuro */
+  padding: 12px 25px;
+  text-decoration: none;
+  border-radius: 50px;
+  font-size: 1rem;
+  display: inline-block;
+  transition: background-color 0.3s ease;
+}
+
+footer .btn-affiliate:hover {
+  background-color: #998B78; /* Cor do botão no hover */
+  color: white;
+}
+
+
+
+.menu{
+  color: #f4f4f4;
+}
+
+
+/* Estilos para a seção de links afiliados */
+.links-affiliados {
+  padding: 60px 20px;
+  background-color: #595146; /* Cor de fundo do rodapé para manter o esquema de cores */
+  color: white;
+  text-align: center;
+  margin-top: 70px;
+}
+
+.links-affiliados h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: #E6D0B4; /* Cor clara para o título */
+}
+
+.links-affiliados p {
+  font-size: 1.1rem;
+  margin-bottom: 40px;
+}
+
+.links-container {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.btn-affiliate {
+  background-color: #E6D0B4; /* Cor de fundo dos botões */
+  color: #595146; /* Cor escura para o texto */
+  padding: 12px 25px;
+  text-decoration: none;
+  border-radius: 50px;
+  font-size: 1.1rem;
+  transition: background-color 0.3s ease;
+  display: inline-block;
+  width: 200px;
+  text-align: center;
+}
+
+.btn-affiliate:hover {
+  background-color: #998B78; /* Cor do botão ao passar o mouse */
+  color: white;
+}
+
+
+.redes-sociais {
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.redes-sociais h2 {
+  color: #E6D0B4;
+  font-size: 2rem;
+  margin-bottom: 30px;
+}
+
+.icones-redes {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+}
+
+.icones-redes img {
+  width: 50px;
+  height: 50px;
+  transition: transform 0.3s ease;
+}
+
+.icones-redes a:hover img {
+  transform: scale(1.2);
+}
+
+
+/* Responsividade para telas grandes (ex: desktop) */
+@media (max-width: 1200px) {
+  .servicos-container {
+      flex-direction: column;
+      width: 80%;
+  }
+
+  .servico {
+      width: 80%;
+      margin: 10px auto;
+  }
+}
+
+/* Responsividade para tablets e celulares */
+@media (max-width: 768px) {
+  header .logo {
+      font-size: 1.6rem;
+  }
+
+  .hero h1 {
+      font-size: 2.5rem;
+  }
+
+  .hero p {
+      font-size: 1rem;
+  }
+
+  .btn-cta {
+      font-size: 1rem;
+      padding: 12px 25px;
+  }
+
+  .foto-perfil {
+      width: 150px;
+      height: 150px;
+  }
+
+  .servicos-container {
+      flex-direction: column;
+      width: 100%;
+  }
+
+  .servico {
+      width: 80%;
+      margin: 10px auto;
+  }
+
+  .texto-sobre h2 {
+      font-size: 1.5rem;
+  }
+
+  form {
+      width: 90%;
+  }
+
+  input, textarea {
+      padding: 12px;
+      font-size: 0.9rem;
+  }
+
+  button {
+      font-size: 1rem;
+      padding: 12px 25px;
+  }
+
+  .dynamic-text {
+    font-size: 1.2rem;
+}
+
+
+.links-container {
+  flex-direction: column;
+  align-items: center;
+}
+
+.btn-affiliate {
+  width: 80%;
+  font-size: 1rem;  /* Ajusta o tamanho da fonte para telas menores */
+  padding: 12px 20px;
+}
+
+}
+
+/* Responsividade para celulares */
+@media (max-width: 480px) {
+  
+  .sobre{
+    margin-bottom: 100px;
+    width: 360px;
+    margin: auto;
+    border-radius: 10px;
+  }
+  
+  .hero h1 {
+      font-size: 2.0rem;
+  }
+
+  .hero p {
+      font-size: 0.9rem;
+  }
+
+.hero{margin-top: -60px;}
+
+  .foto-perfil {
+      width: 120px;
+      height: 120px;
+  }
+
+  .btn-cta {
+      font-size: 1rem;
+      padding: 10px 20px;
+      margin-top: 50px;
+  }
+
+  .servico {
+      width: 100%;
+      margin: 15px 0;
+  }
+
+  .servicos-container {
+      display: block;
+  }
+
+  .texto-sobre h2 {
+      font-size: 1.3rem;
+  }
+
+  input, textarea {
+      font-size: 0.9rem;
+      padding: 12px;
+  }
+
+  button {
+      font-size: 1rem;
+      padding: 12px 25px;
+  }
+
+  .header{
+    width: 350px;
+    display: block;
+margin: 10px auto;
+border-radius: 10px;
+  }
+
+  .links-affiliados h2 {
+    font-size: 1.8rem; /* Ajuste de fonte para o título */
+}
+
+.links-affiliados p {
+    font-size: 1rem; /* Ajuste de fonte para a descrição */
+}
+
+.btn-affiliate {
+    width: 90%;
+    font-size: 1rem; /* Ajusta o tamanho da fonte para telas pequenas */
+    padding: 10px 18px;
+}
+
+.icones-redes {
+  flex-direction: row;
+  gap: 30px;
+}
+
+.redes-sociais h2 {
+  font-size: 1.5rem;
+}
+
+.icones-redes img {
+  width: 40px;
+  height: 40px;
+}
+
+
+
+}
+
